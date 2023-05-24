@@ -1,0 +1,24 @@
+[
+    {
+        "id":1,
+        "title": "Article 1",
+        "descr":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, beatae. Cumque tempore nostrum magnam, quas at, delectus eos dicta, incidunt ducimus similique reprehenderit fugit? Magnam, repellat! Temporibus quaerat molestiae at!",
+        "author":"Lebron"
+    },
+
+    {
+        "id":2,
+        "title": "Article 2",
+        "descr":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, beatae. Cumque tempore nostrum magnam, quas at, delectus eos dicta, incidunt ducimus similique reprehenderit fugit? Magnam, repellat! Temporibus quaerat molestiae at!",
+        "author":"Stephen Curry"
+    },
+    
+    {
+        "id":3,
+        "title": "Article 3",
+        "descr":"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis, beatae. Cumque tempore nostrum magnam, quas at, delectus eos dicta, incidunt ducimus similique reprehenderit fugit? Magnam, repellat! Temporibus quaerat molestiae at!",
+        "author":"Paul"
+    }
+        
+]
+   
