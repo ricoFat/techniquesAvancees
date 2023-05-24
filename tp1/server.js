@@ -2,7 +2,8 @@ const express = require('express')
 const app = express();
 const fs = require('fs')
 const request = require('request')
-const path =  require('path')
+const path =  require('path');
+const { API_KEY, PORT } = require('./config');
 
 const port = 8080; // Choose a port for your API
 
@@ -11,7 +12,7 @@ app.get('/', (req, res) => {
     method: 'GET',
     url: 'https://v3.football.api-sports.io/leagues',
     headers: {
-      'x-rapidapi-key': '5041d5aea62b74d4925fdfc66faa39d9',
+      'x-rapidapi-key': API_KEY,
       'x-rapidapi-host': 'v3.football.api-sports.io'
     }
   };
@@ -42,6 +43,6 @@ app.get("/*",(req, res) =>
 })
 
 app.listen(port, () => {
-  console.log(`API server is running on http://localhost:${port}`);
+  console.log('server is running on' ,PORT);
 });
 
