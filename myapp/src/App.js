@@ -47,10 +47,16 @@ function App() {
 		setTasks([...tasks, newTask])
 	}
 
+	//5 toggle form
+	const [showAddTask , setShowAddTask ] = useState(false)
+
 	return (
 		<div className="container">
-			<Header />
-			<AddTask onAdd = {addTask}/>
+			<Header  showAdd={showAddTask} onAdd ={()=> setShowAddTask(!showAddTask)}/>
+			{
+				showAddTask &&  <AddTask onAdd = {addTask}/>
+			}
+			
 			{tasks.length > 0 ? (
 				<ManyTasks tasks={tasks} onDeleteMany={ deleteTask}  onToggleMany={toggleReminder} />
 				):(
